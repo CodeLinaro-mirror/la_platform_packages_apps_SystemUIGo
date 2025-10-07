@@ -41,6 +41,8 @@ import com.android.systemui.display.ui.viewmodel.ConnectingDisplayViewModel;
 import com.android.systemui.dock.DockManager;
 import com.android.systemui.dock.DockManagerImpl;
 import com.android.systemui.doze.DozeHost;
+import com.android.systemui.dreams.suppression.dagger.NoOpActivityRecognitionModule;
+import com.android.systemui.lowlight.dagger.NoopAmbientLightModeMonitorModule;
 import com.android.systemui.emergency.EmergencyGestureModule;
 import com.android.systemui.keyguard.ui.view.layout.blueprints.KeyguardBlueprintModule;
 import com.android.systemui.keyguard.ui.view.layout.sections.KeyguardSectionsModule;
@@ -123,6 +125,8 @@ import javax.inject.Provider;
         MultiUserUtilsModule.class,
         NavigationBarControllerModule.class,
         NearbyMediaDevicesManager.StartableModule.class,
+        NoOpActivityRecognitionModule.class,
+        NoopAmbientLightModeMonitorModule.class,
         NoopPosturingModule.class,
         PowerModule.class,
         QSFragmentStartableModule.class,
